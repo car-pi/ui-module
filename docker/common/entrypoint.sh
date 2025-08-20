@@ -17,8 +17,9 @@ ninja -C build/
 ninja -C build/ install
 
 # Build Cage
-# cd /home/ubuntu/cage
-# meson setup build --buildtype=release
-# meson compile -C build
+cd /home/ubuntu/cage
+meson setup build --buildtype=release
+meson compile -C build
+meson install -C build
 
 bash
