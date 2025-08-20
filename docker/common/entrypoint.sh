@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Running Audio Module"
+echo "Running UI Module"
 
 # Build xkbcommon
 cd /home/ubuntu/libxkbcommon
@@ -16,10 +16,9 @@ meson setup build/
 ninja -C build/
 ninja -C build/ install
 
-# Build Cage
-cd /home/ubuntu/cage
-meson setup build --buildtype=release
-meson compile -C build
-meson install -C build
+# Build Cagebreak
+cd /home/ubuntu/cagebreak
+meson setup build -Dxwayland=false -Dman-pages=true --buildtype=release
+ninja -C build
 
 bash

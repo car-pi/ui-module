@@ -7,3 +7,6 @@
 [submodule "src/libxkbcommon"]
 	path = src/libxkbcommon
 	url = git@github.com:xkbcommon/libxkbcommon.git
+[submodule "src/cagebreak"]
+	path = src/cagebreak
+	url = git@github.com:project-repo/cagebreak.git

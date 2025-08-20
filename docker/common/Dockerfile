@@ -36,6 +36,16 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN apt-get install -y --no-install-recommends \
     libegl-dev and libgles2-mesa-dev libvulkan-dev glslang-dev libdrm-dev libgbm-dev libinput-dev libudev-dev libseat-dev hwdata libdisplay-info-dev libliftoff-dev
+
+RUN apt-get install -y --no-install-recommends \
+    libcairo2-dev
+
+RUN apt-get install -y --no-install-recommends \
+    libpango1.0-dev
+
+RUN apt-get install -y --no-install-recommends \
+    scdoc
+
 RUN rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /home/ubuntu

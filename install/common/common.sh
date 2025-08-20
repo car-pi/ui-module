@@ -2,6 +2,8 @@
 echo "RUNNING modules/ui-module/install/common/common.sh"
 export MODULE_ROOT="$ROOT/modules/ui-module"
 
+source ui.sh
+
 # --- CONFIGURATION ---
 MODULE_NAME=$(basename "$MODULE_ROOT")   # infer module name from dir name
 MODULE_CLASS="common"
