@@ -1,0 +1,9 @@
+[submodule "src/cage"]
+	path = src/cage
+	url = git@github.com:cage-kiosk/cage.git
+[submodule "src/wlroots"]
+	path = src/wlroots
+	url = https://gitlab.freedesktop.org/wlroots/wlroots.git
+[submodule "src/libxkbcommon"]
+	path = src/libxkbcommon
+	url = git@github.com:xkbcommon/libxkbcommon.git

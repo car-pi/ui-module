@@ -1,0 +1,13 @@
+[Unit]
+Description=UI Module Common Service
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStartPre=-/usr/bin/docker rm -f ui-module-common
+ExecStart=/usr/bin/docker run --rm --name ui-module-common -v /opt/car-pi/modules/ui-module/src/cage:/home/ubuntu/cage ui-module-common
+ExecStop=/usr/bin/docker stop ui-module-common
+
+[Install]
+WantedBy=multi-user.target

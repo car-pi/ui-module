@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "RUNNING modules/template-module/install/common/common.sh"
-export MODULE_ROOT="$ROOT/modules/template-module"
+echo "RUNNING modules/ui-module/install/common/common.sh"
+export MODULE_ROOT="$ROOT/modules/ui-module"
 
 # --- CONFIGURATION ---
 MODULE_NAME=$(basename "$MODULE_ROOT")   # infer module name from dir name
@@ -26,10 +26,10 @@ sudo systemctl daemon-reload
 
 # # --- ENABLE & START SERVICE ---
 echo "Enabling $MODULE_ID.service"
-sudo systemctl enable "$MODULE_ID.service"
+# sudo systemctl enable "$MODULE_ID.service"
 
 echo "Starting $MODULE_ID.service"
-sudo systemctl restart "$MODULE_ID.service"
+# sudo systemctl restart "$MODULE_ID.service"
 
 echo "Deployment complete for module: $MODULE_ID"
 
