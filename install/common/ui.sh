@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "RUNNING modules/ui-module/install/common/ui.sh"
 # Install Weston (Wayland Compositor)
-sudo apt install -y weston
+sudo apt install -y weston xwayland
 # Install common apps
 sudo apt install -y firefox
 
