@@ -1,0 +1,9 @@
+[default]
+path = "/opt/car-pi/modules/ui-module/config/wpaperd/common/bg"
+duration = "5m"
+mode = "center"
+transition-time = 1000
+initial-transition = true
+[default.transition.circle-open]
+smoothness = 1.0
+opening = true
