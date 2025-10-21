@@ -1,0 +1,15 @@
+[Grid]
+Y=5
+X=3
+RowSpacing=30
+ColumnSpacing=50
+
+[AppItem]
+FontSize=20
+IconSize=96
+BoxWidth=144
+BoxHeight=144
+
+[SearchBar]
+Width=-1
+Height=-1
