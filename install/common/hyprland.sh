@@ -23,3 +23,4 @@ ln -s "/opt/car-pi/modules/ui-module/config/hypr/hyprland.conf" "/home/$USER/.co
 sudo apt install libglm-dev libpulse-dev
 hyprpm add https://github.com/horriblename/hyprgrass
 hyprpm enable hyprgrass
+hyprpm enable hyprgrass-pulse
