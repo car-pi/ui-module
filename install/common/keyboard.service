@@ -1,0 +1,9 @@
+[Unit]
+Description=Keyboard Service
+
+[Service]
+Restart=always
+ExecStart=wvkbd-mobintl -L 200 --hidden
+
+[Install]
+WantedBy=multi-user.target

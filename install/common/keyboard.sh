@@ -16,3 +16,8 @@ sudo cp /usr/local/lib/fcitx5/libvirtualkeyboardadapter.so /usr/lib/aarch64-linu
 mkdir -p "/home/$USER/.config/fcitx5/conf"
 ln -s "/opt/car-pi/modules/ui-module/config/fcitx5/conf/virtualkeyboardadapter.conf" "/home/$USER/.config/fcitx5/conf/virtualkeyboardadapter.conf"
 
+# Install Systemd service
+sudo cp $MODULE_ROOT/install/common/keyboard.service /etc/systemd/system/keyboard.service
+sudo chmod 644 /etc/systemd/system/keyboard.service
+sudo systemctl daemon-reload
+
