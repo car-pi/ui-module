@@ -30,4 +30,20 @@ mousepad
 blueman-manager
 rofi
 rofi-theme-selector
-waydroid
+waydroid app launch com.android.calculator2
+waydroid app launch com.google.android.apps.messaging
+waydroid app launch org.lineageos.eleven
+waydroid app launch com.android.deskclock
+waydroid app launch com.google.android.contacts
+waydroid app launch org.lineageos.etar
+waydroid app launch com.android.documentsui
+waydroid app launch com.google.android.dialer
+waydroid app launch org.lineageos.jelly
+waydroid app launch com.android.gallery3d
+waydroid app launch org.lineageos.recorder
+waydroid app launch com.android.settings
+waydroid app launch io.appium.settings
+waydroid app launch com.android.vending
+waydroid app launch org.lineageos.aperture
+xgps
+xgpsspeed
