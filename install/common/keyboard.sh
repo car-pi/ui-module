@@ -19,5 +19,8 @@ ln -s "/opt/car-pi/modules/ui-module/config/fcitx5/conf/virtualkeyboardadapter.c
 # Install Systemd service
 sudo cp $MODULE_ROOT/install/common/keyboard.service /etc/systemd/system/keyboard.service
 sudo chmod 644 /etc/systemd/system/keyboard.service
+
 sudo systemctl daemon-reload
+sudo systemctl enable "keyboard.service"
+sudo systemctl start "keyboard.service"
 
